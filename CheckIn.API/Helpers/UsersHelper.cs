@@ -17,7 +17,7 @@ namespace CheckIn.API.Helpers
     public class UsersHelper : IDisposable
     {
         private static ApplicationDbContext userContext = new ApplicationDbContext(Constantes.conexion);
-        private static ModelCliente db = new ModelCliente(Constantes.conexion);
+        private static ModelCliente db = new ModelCliente();
 
         public static bool DeleteUser(string userName, string roleName)
         {
